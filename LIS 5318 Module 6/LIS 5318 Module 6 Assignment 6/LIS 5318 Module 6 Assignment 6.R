@@ -27,3 +27,9 @@ ggplot(df_summary, aes(x = Subjectshot, y = count, fill = Fatal)) +
   geom_bar(stat = "identity", position = "dodge", alpha = 0.7) +
   labs(x = "Subject Shot", y = "Count", title = "Officer Involved Shootings - 2023") +
   theme_minimal()
+install.packages("ggplot2")
+library(ggplot2)
+ggplot(df, aes(x = OfficerAge, y = OfficerTenure)) +
+  geom_point(color = "blue", size = 3, alpha = 0.7) +  
+  labs(x = "Officer Age", y = "Officer Tenure", title = "Scatterplot of Officer Age vs Officer Tenure") +
+  theme_minimal()
