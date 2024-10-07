@@ -1,0 +1,7 @@
+read.csv("/Users/kelsey/Desktop/LIS 5318 Visual Analytics/JaxShootingData2023.csv")
+df <- read.csv("/Users/kelsey/Desktop/LIS 5318 Visual Analytics/JaxShootingData2023.csv")
+head(df)
+install.packages("ggplot2")
+library("ggplot2")
+library(ggplot2)
+ggplot(df, aes(x = OfficerAge, y = OfficerTenure)) + geom_line(color = "blue") + labs(x = "Officer Age", y = "Officer Tenure", title = "Officer Age vs Officer Tenure - Officer Involved Shootings - 2023") + theme_minimal()
