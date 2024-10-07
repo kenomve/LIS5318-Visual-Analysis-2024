@@ -31,5 +31,5 @@ install.packages("ggplot2")
 library(ggplot2)
 ggplot(df, aes(x = OfficerAge, y = OfficerTenure)) +
   geom_point(color = "blue", size = 3, alpha = 0.7) +  
-  labs(x = "Officer Age", y = "Officer Tenure", title = "Scatterplot of Officer Age vs Officer Tenure") +
+  labs(x = "Officer Age", y = "Officer Tenure", title = "Scatterplot of Officer Age vs Officer Tenure - Jacksonville Sheriff's Dept. Police Involved Shootings - 2023") +
   theme_minimal()
